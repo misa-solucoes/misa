@@ -1,6 +1,3 @@
-# Cabeçalhos de segurança (Netlify e hospedagens compatíveis).
-# Em outra hospedagem, configure os mesmos cabeçalhos no servidor.
-# Strict-Transport-Security só vale em HTTPS; confirme o domínio antes de publicar.
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
