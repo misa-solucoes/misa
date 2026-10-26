@@ -1,8 +1,23 @@
+# Cabeçalhos de segurança (Netlify e hospedagens compatíveis).
+# Em outra hospedagem, configure os mesmos cabeçalhos no servidor.
+# Strict-Transport-Security só vale em HTTPS; confirme o domínio antes de publicar.
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
   Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'
   Strict-Transport-Security: max-age=31536000
-*/
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/img/*
+  Cache-Control: public, max-age=604800
+
+/styles.css
+  Cache-Control: public, max-age=3600
+
+/script.js
+  Cache-Control: public, max-age=3600
