@@ -28,6 +28,36 @@
     });
   }
 
+
+  const sub = document.querySelector('.has-sub');
+  const subToggle = sub && sub.querySelector('.sub-toggle');
+
+  if (sub && subToggle) {
+    const setSubOpen = (open) => {
+      sub.classList.toggle('is-open', open);
+      subToggle.setAttribute('aria-expanded', String(open));
+    };
+
+    subToggle.addEventListener('click', () => {
+      setSubOpen(subToggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!sub.contains(event.target)) setSubOpen(false);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && subToggle.getAttribute('aria-expanded') === 'true') {
+        setSubOpen(false);
+        subToggle.focus();
+      }
+    });
+
+    sub.querySelectorAll('.submenu a').forEach((link) => {
+      link.addEventListener('click', () => setSubOpen(false));
+    });
+  }
+
   const year = document.querySelector('#year');
   if (year) year.textContent = String(new Date().getFullYear());
 
