@@ -1,0 +1,19 @@
+{
+  "_leia_me": "Fonte única dos preços do site. Edite apenas os números aqui; index.html e servicos.html leem este arquivo. Valores em reais, sem centavos. Para faixas use minimo e maximo.",
+  "moeda": "BRL",
+  "atualizado_em": "2026-11-04",
+  "pacotes": {
+    "basic":   { "nome": "Basic",   "preco": 877,  "periodo": "mês" },
+    "plus":    { "nome": "Plus",    "preco": 1457, "periodo": "mês" },
+    "premium": { "nome": "Premium", "preco": 2437, "periodo": "mês" },
+    "diamond": { "nome": "Diamond", "preco": 4177, "periodo": "mês" }
+  },
+  "avulsos": {
+    "treinamento-basico-remoto":   { "nome": "Treinamento de equipe básico remoto", "preco": 547 },
+    "treinamento-personalizado":   { "nome": "Treinamento de equipe personalizado presencial", "preco": 1047 },
+    "landing-page":                { "nome": "Landing page", "preco": 897 },
+    "site-institucional-basico":   { "nome": "Site institucional básico", "preco": 1900 },
+    "representacao-empresarial":   { "nome": "Representação empresarial", "minimo": 657, "maximo": 1500 },
+    "eventos-viagens-corporativas":{ "nome": "Pequenos eventos e viagens corporativas", "minimo": 457, "maximo": 900 }
+  }
+}

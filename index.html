@@ -42,16 +42,9 @@
     "itemListElement": [
       {
         "@type": "Offer",
+        "identifier": "basic",
         "name": "Pacote Basic - Organização",
         "description": "praticidade para quem precisa resolver as pendências e retomar o controle da rotina.",
-        "priceCurrency": "BRL",
-        "price": "697",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "697",
-          "priceCurrency": "BRL",
-          "unitText": "mês"
-        },
         "itemOffered": {
           "@type": "Service",
           "name": "Pacote Basic",
@@ -60,16 +53,9 @@
       },
       {
         "@type": "Offer",
+        "identifier": "plus",
         "name": "Pacote Plus - Organização e atendimento",
         "description": "Para quem quer organização e também suporte no contato com os clientes.",
-        "priceCurrency": "BRL",
-        "price": "1297",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "1297",
-          "priceCurrency": "BRL",
-          "unitText": "mês"
-        },
         "itemOffered": {
           "@type": "Service",
           "name": "Pacote Plus",
@@ -78,16 +64,9 @@
       },
       {
         "@type": "Offer",
+        "identifier": "premium",
         "name": "Pacote Premium - Gestão integrada",
         "description": "Para quem quer a rotina administrativa e a tecnologia andando juntas.",
-        "priceCurrency": "BRL",
-        "price": "2197",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "2197",
-          "priceCurrency": "BRL",
-          "unitText": "mês"
-        },
         "itemOffered": {
           "@type": "Service",
           "name": "Pacote Premium",
@@ -96,16 +75,9 @@
       },
       {
         "@type": "Offer",
+        "identifier": "diamond",
         "name": "Pacote Diamond - Apoio operacional e tecnológico",
         "description": "Solução completa para quem busca parceria estratégica em todas as frentes, da organização administrativa à tecnologia e segurança da informação.",
-        "priceCurrency": "BRL",
-        "price": "3497",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "3497",
-          "priceCurrency": "BRL",
-          "unitText": "mês"
-        },
         "itemOffered": {
           "@type": "Service",
           "name": "Pacote Diamond",
@@ -126,7 +98,7 @@
       "name": "Preciso contratar todas as áreas da MISA?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Não. Você contrata o que faz sentido para o momento da sua empresa: gestão administrativa, tecnologia e soluções digitais, segurança da informação e capacitação. Cada serviço é combinado conforme a sua necessidade e o escopo definido."
+        "text": "Não. Você contrata o que faz sentido para o momento da sua empresa: gestão administrativa e tecnologia. Cada serviço é combinado conforme a sua necessidade e o escopo definido."
       }
     },
     {
@@ -255,22 +227,22 @@
 
     <section class="section personas" id="para-quem">
       <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">PARA QUEM É A MISA</p><h2>Feita para quem empreende e não tem tempo a perder.</h2></div><p>Se alguma destas situações parece com a sua rotina, a MISA pode ajudar.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">PARA QUEM É A MISA</p><h2>Feita para quem empreende e não tem tempo a perder.</h2></div><p>Se alguma destas situações parece com a sua rotina, a MISA pode resolver.</p></div>
         <div class="persona-grid">
           <article class="persona-card">
-            <h3>Você empreende e faz tudo sozinho</h3>
+            <h3>Você empreende e faz tudo sozinho?</h3>
             <p class="persona-pain">Atende, agenda, cobra, responde mensagens e ainda precisa aparecer na internet. O dia acaba e a lista continua.</p>
             <p class="persona-help"><b>Como a MISA resolve:</b> organiza sua rotina e acompanha suas demandas, para você ganhar tempo.</p>
             <a class="card-link" href="servicos.html#gestao">Ver gestão administrativa <span aria-hidden="true">→</span></a>
           </article>
           <article class="persona-card">
-            <h3>Sua empresa cresceu e os processos não acompanharam</h3>
+            <h3>Sua empresa cresceu e os processos não acompanharam?</h3>
             <p class="persona-pain">Informações espalhadas, tarefas repetitivas e demandas que se perdem no caminho atrasam a gestão.</p>
             <p class="persona-help"><b>Como a MISA resolve:</b> estrutura processos, dados e cria automações para a operação fluir.</p>
             <a class="card-link" href="servicos.html#tecnologia">Ver tecnologia e soluções digitais <span aria-hidden="true">→</span></a>
           </article>
           <article class="persona-card">
-            <h3>Você quer aderir a tecnologia sem expor o negócio</h3>
+            <h3>Você quer aderir a tecnologia sem expor o negócio?</h3>
             <p class="persona-pain">Site, ferramentas e equipe conectados trazem oportunidades, e também riscos que ninguém explicou.</p>
             <p class="persona-help"><b>Como a MISA resolve:</b> orienta e treina sua equipe e implementa segurança de forma prática.</p>
             <a class="card-link" href="servicos.html#seguranca">Ver segurança e capacitação <span aria-hidden="true">→</span></a>
@@ -291,8 +263,7 @@
             <p class="plan-tag">Organização</p>
             <h3>Basic</h3>
             <p class="plan-pitch">praticidade para quem precisa resolver as pendências e retomar o controle da rotina.</p>
-            <p class="plan-price"><span class="plan-from">Investimento mensal</span><b>R$ 697</b><small>/mês</small></p>
-            <p class="plan-return">Primeiro retorno em até 2 dias úteis.</p>
+            <p class="plan-price"><span class="plan-from">Investimento mensal</span><b data-preco="pacotes.basic">Consulte</b><small>/mês</small></p>
             <ul class="plan-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Gestão de agenda: até 8 solicitações</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Documentos digitais: até 15</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Planilhas e controles: até 3</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Organização de processos: até 2 controles</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Acompanhamento: até 4 demandas</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Resumo mensal das atividades</span></li></ul>
             <a class="button button-primary plan-cta" href="https://wa.me/5551991355704?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MISA%20e%20quero%20saber%20mais%20sobre%20o%20pacote%20Basic." target="_blank" rel="noopener noreferrer">Quero o Basic <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a>
           </article>
@@ -300,8 +271,7 @@
             <p class="plan-tag">Organização e atendimento</p>
             <h3>Plus</h3>
             <p class="plan-pitch">Para quem quer organização e também suporte no contato com os clientes.</p>
-            <p class="plan-price"><span class="plan-from">Investimento mensal</span><b>R$ 1.297</b><small>/mês</small></p>
-            <p class="plan-return">Primeiro retorno em até 1 dia útil.</p>
+            <p class="plan-price"><span class="plan-from">Investimento mensal</span><b data-preco="pacotes.plus">Consulte</b><small>/mês</small></p>
             <ul class="plan-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Tudo da organização, em maior volume</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Atendimento WhatsApp e e-mail: até 20 interações</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Gestão de agenda: até 16 solicitações</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>1 automação simples</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>1 análise de dados</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Acompanhamento: até 8 demandas</span></li></ul>
             <a class="button button-primary plan-cta" href="https://wa.me/5551991355704?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MISA%20e%20quero%20saber%20mais%20sobre%20o%20pacote%20Plus." target="_blank" rel="noopener noreferrer">Quero o Plus <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a>
           </article>
@@ -309,8 +279,7 @@
             <p class="plan-tag">Gestão integrada</p>
             <h3>Premium</h3>
             <p class="plan-pitch">Para quem quer a rotina administrativa e a tecnologia andando juntas.</p>
-            <p class="plan-price"><span class="plan-from">Investimento mensal</span><b>R$ 2.197</b><small>/mês</small></p>
-            <p class="plan-return">Primeiro retorno em até 1 dia útil, respeitando a fila de prioridades.</p>
+            <p class="plan-price"><span class="plan-from">Investimento mensal</span><b data-preco="pacotes.premium">Consulte</b><small>/mês</small></p>
             <ul class="plan-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Atendimento WhatsApp e e-mail: até 40 interações</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Gestão de agenda: até 30 solicitações</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Até 2 automações simples</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Suporte remoto limitado: até 4 solicitações</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>2 resumos quinzenais</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Acompanhamento: até 10 demandas</span></li></ul>
             <a class="button button-primary plan-cta" href="https://wa.me/5551991355704?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MISA%20e%20quero%20saber%20mais%20sobre%20o%20pacote%20Premium." target="_blank" rel="noopener noreferrer">Quero o Premium <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a>
           </article>
@@ -318,13 +287,12 @@
             <p class="plan-tag">Apoio operacional e tecnológico</p>
             <h3>Diamond</h3>
             <p class="plan-pitch">Solução completa para quem busca parceria estratégica em todas as frentes, da organização administrativa à tecnologia e segurança da informação.</p>
-            <p class="plan-price"><span class="plan-from">Investimento mensal</span><b>R$ 3.497</b><small>/mês</small></p>
-            <p class="plan-return">Primeiro retorno em até 4 horas úteis para solicitações prioritárias dentro do escopo.</p>
+            <p class="plan-price"><span class="plan-from">Investimento mensal</span><b data-preco="pacotes.diamond">Consulte</b><small>/mês</small></p>
             <ul class="plan-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Atendimento WhatsApp e e-mail: até 60 interações</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Suporte remoto: até 10 solicitações</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Análise de segurança e ciclo de testes (QA)</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Até 3 automações simples</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>4 resumos semanais</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l4.5 4.5L19 7"/></svg><span>Relatório consolidado com recomendações</span></li></ul>
             <a class="button button-primary plan-cta" href="https://wa.me/5551991355704?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MISA%20e%20quero%20saber%20mais%20sobre%20o%20pacote%20Diamond." target="_blank" rel="noopener noreferrer">Quero o Diamond <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a>
           </article>
         </div>
-        <p class="plan-note">Valores mensais de referência. O escopo final é confirmado na proposta. Prazos de retorno são de primeiro contato, não de resolução. Atividades complexas, licenças, integrações e serviços fora do escopo são avaliados e orçados separadamente, com a sua aprovação.</p>
+        <p class="plan-note">Valores mensais de referência. O escopo final é confirmado na proposta. Atividades complexas, licenças, integrações e serviços fora do escopo são avaliados e orçados separadamente, com a sua aprovação.</p>
         <p class="section-cta"><a class="button button-ghost-dark button-lg" href="servicos.html">Ver todos os serviços e comparar pacotes <span aria-hidden="true">→</span></a></p>
       </div>
     </section>
@@ -355,10 +323,10 @@
       <div class="container faq-wrap">
         <div class="faq-intro"><p class="eyebrow">PERGUNTAS FREQUENTES</p><h2>Dúvidas antes de conversar?</h2><p>Reunimos as respostas mais comuns. Se a sua pergunta não estiver aqui, chame a gente.</p></div>
         <div class="faq-list">
-          <details class="faq-item"><summary>Preciso contratar todas as áreas da MISA?</summary><p>Não. Você contrata o que faz sentido para o momento da sua empresa: gestão administrativa, tecnologia e soluções digitais, segurança da informação e capacitação. Cada serviço é combinado conforme a sua necessidade e o escopo definido.</p></details>
+          <details class="faq-item"><summary>Preciso contratar todas as áreas da MISA?</summary><p>Não. Você contrata o que faz sentido para o momento da sua empresa: gestão administrativa e tecnologia. Cada serviço é combinado conforme a sua necessidade e o escopo definido.</p></details>
           <details class="faq-item"><summary>Qual a diferença entre o formato mensal e o pontual e personalizado?</summary><p>O formato mensal é um suporte recorrente às rotinas e demandas da empresa, com acompanhamento das tarefas e comunicação aberta e frequente. O formato pontual e personalizado atende uma necessidade específica ou um projeto, com escopo e prazo definidos previamente.</p></details>
           <details class="faq-item"><summary>Como começa o trabalho com a MISA?</summary><p>Com uma conversa para entender os desafios e os objetivos da sua empresa. Em seguida definimos escopo, responsabilidades e prazos, realizamos as atividades conforme a proposta alinhada e acompanhamos as entregas.</p></details>
-          <details class="faq-item"><summary>A MISA cria sites e landing pages para empresas?</summary><p>Sim. A criação de sites e landing pages faz parte da área de tecnologia e soluções digitais, junto com análise e gestão de dados, suporte a demandas tecnológicas e automação de tarefas.</p></details>
+          <details class="faq-item"><summary>A MISA cria sites e landing pages para empresas?</summary><p>Sim. A criação de sites e landing pages faz parte da área de tecnologia e soluções digitais, junto com análise e gestão de dados, suporte a demandas tecnológicas e automação de tarefas. *serviços não inclusos no pacote serão orçados separadamente</p></details>
           <details class="faq-item"><summary>A MISA oferece treinamentos e orientação em segurança da informação?</summary><p>Sim. A área de segurança da informação e capacitação inclui treinamentos, orientação para o uso mais seguro da tecnologia, análise de cibersegurança e implementação de segurança.</p></details>
           <details class="faq-item"><summary>Como posso falar com a MISA?</summary><p>Pelo WhatsApp (51) 99135-5704, pelo e-mail misa.solucoesadmetecnologia@gmail.com, pelo Instagram @misa.solucoesadmetecnologia ou pelo LinkedIn. O caminho mais rápido é o WhatsApp.</p></details>
         </div>

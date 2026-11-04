@@ -596,7 +596,7 @@ h1 span {
   justify-content: space-between;
   align-items: flex-end;
   gap: 40px;
-  margin-bottom: 40px
+  margin-bottom: 0px
 }
 
 .section-heading h2 {
@@ -1521,7 +1521,7 @@ html {
 }
 
 .service-group-head h3 {
-  font-size: 22px;
+  font-size: 40px;
   margin-bottom: 6px
 }
 
