@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; img-src 'self' data:; style-src 'sha256-QI76kCwQZFnuXYAAuxL/QbC4o0Ln4JPt740LjMaduXE='">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#080c19">
+    <meta name="description" content="MISA - Soluções empresariais e tecnológicas para impulsionar seu negócio.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="MISA | Soluções Empresariais e Tecnológicas">
+    <meta property="og:description" content="Fale com a MISA no WhatsApp ou conheça nossas soluções.">
+    <title>MISA | Soluções Empresariais e Tecnológicas</title>
+
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #080c19;
+            --surface: rgba(24, 37, 65, .72);
+            --border: rgba(125, 160, 230, .22);
+            --text: #f4f7ff;
+            --muted: #a4b0ce;
+            --blue: #327bff;
+            --purple: #8e4bf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            min-height: 100dvh;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system,
+                         "Segoe UI", sans-serif;
+            -webkit-text-size-adjust: 100%;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(
+                    ellipse at 50% 26%,
+                    rgba(50, 123, 255, .30),
+                    transparent 55%
+                ),
+                radial-gradient(
+                    ellipse at 95% 80%,
+                    rgba(142, 75, 248, .12),
+                    transparent 45%
+                );
+        }
+
+        .container {
+            width: min(100%, 560px);
+            min-height: 100vh;
+            min-height: 100dvh;
+            margin: 0 auto;
+            padding: 30px 22px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile {
+            width: 100%;
+            margin: 62px 0 42px;
+            text-align: center;
+            animation: fadeUp .7s ease both;
+        }
+
+        .avatar-ring {
+            width: 124px;
+            height: 124px;
+            margin: 0 auto 24px;
+            padding: 4px;
+            border-radius: 50%;
+            background: linear-gradient(
+                135deg,
+                var(--blue),
+                var(--purple)
+            );
+            box-shadow:
+                0 0 45px rgba(50,123,255,.22);
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #101a32;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: -2px;
+            line-height: 1;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .links {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-card {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 17px;
+            min-height: 88px;
+            padding: 18px 20px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            background: var(--surface);
+            color: var(--text);
+            text-decoration: none;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 8px 30px rgba(0,0,0,.12);
+            transition:
+                transform .25s ease,
+                border-color .25s ease,
+                background .25s ease,
+                box-shadow .25s ease;
+            animation: fadeUp .65s ease both;
+        }
+
+        .links li:nth-child(2) .link-card {
+            animation-delay: .12s;
+        }
+
+        .links li:nth-child(3) .link-card {
+            animation-delay: .24s;
+        }
+
+        @media (hover: hover) {
+            .link-card:hover {
+                transform: translateY(-4px);
+                border-color: rgba(105,155,255,.65);
+                background: rgba(35,55,92,.85);
+                box-shadow: 0 12px 35px rgba(50,123,255,.13);
+            }
+
+            .link-card:hover .arrow {
+                transform: translate(3px, -3px);
+            }
+        }
+
+        .link-card:active {
+            transform: scale(.985);
+        }
+
+        .link-card:focus-visible {
+            outline: 3px solid #80acff;
+            outline-offset: 4px;
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+            background: rgba(255,255,255,.06);
+        }
+
+        .icon-box svg {
+            width: 25px;
+            height: 25px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .whatsapp .icon-box {
+            color: #69e6a3;
+        }
+
+        .website .icon-box {
+            color: #8fb6ff;
+        }
+
+        .extra .icon-box {
+            color: #b8a0ff;
+        }
+
+        .link-card.is-soon {
+            opacity: .75;
+            border-style: dashed;
+            cursor: default;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+        }
+
+        .link-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .link-title {
+            display: block;
+            font-size: 16px;
+            font-weight: 650;
+            letter-spacing: .2px;
+        }
+
+        .link-description {
+            display: block;
+            margin-top: 5px;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .arrow {
+            width: 19px;
+            height: 19px;
+            flex-shrink: 0;
+            color: #9baac9;
+            transition: transform .25s ease;
+        }
+
+        footer {
+            width: 100%;
+            margin-top: auto;
+            padding-top: 85px;
+            text-align: center;
+        }
+
+        .footer-line {
+            width: 55px;
+            height: 2px;
+            margin: 0 auto 20px;
+            border-radius: 5px;
+            background: linear-gradient(
+                90deg,
+                var(--blue),
+                var(--purple)
+            );
+        }
+
+        footer p {
+            color: #8190b1;
+            font-size: 11px;
+            line-height: 1.7;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 22px 18px 24px;
+            }
+
+            .profile {
+                margin: 52px 0 38px;
+            }
+
+            .link-card {
+                min-height: 82px;
+                padding: 15px;
+                gap: 13px;
+            }
+
+            .icon-box {
+                width: 44px;
+                height: 44px;
+            }
+
+            .link-title {
+                font-size: 15px;
+            }
+
+            .link-description {
+                font-size: 12px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        .brand-logo {
+            display: block;
+            width: min(100%, 320px);
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .brand-banner {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 22px;
+            border: 1px solid var(--border);
+            box-shadow: 0 0 45px rgba(50,123,255,.18);
+        }
+
+        .brand-m {
+            display: block;
+            width: 150px;
+            height: auto;
+            margin: 0 auto 18px;
+            filter: drop-shadow(0 0 28px rgba(50,123,255,.35));
+        }
+
+        .avatar.has-m {
+            background: #eef4ff;
+        }
+
+        .avatar.has-m img {
+            width: 66%;
+            height: auto;
+        }
+
+        .brand-name {
+            font-size: 40px;
+            font-weight: 800;
+            letter-spacing: 14px;
+            padding-left: 14px;
+            line-height: 1.1;
+        }
+
+        .brand-text {
+            display: block;
+            width: min(100%, 360px);
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .profile .subtitle.tight {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <header class="profile">
+            <img class="brand-m" src="img/m-simbolo.webp" width="500" height="388" alt="">
+            <h1><img class="brand-text" src="img/logo-texto-misa.webp" width="800" height="213" alt="MISA - Soluções empresariais e tecnológicas"></h1>
+        </header>
+
+        <nav aria-label="Links da MISA">
+            <ul class="links">
+
+                <li>
+                    <a class="link-card whatsapp"
+                       href="https://wa.me/5551991355704?text=Ol%C3%A1%21%20Vim%20pelo%20Instagram%20da%20MISA%20e%20gostaria%20de%20conversar%20sobre%20as%20necessidades%20da%20minha%20empresa."
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <span class="icon-box">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 21l1.9-5.5a9 9 0 0 1-.9-4A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/>
+                                <path d="M9 9c.5 3 2 4.5 5 6l2-1"/>
+                            </svg>
+                        </span>
+                        <span class="link-content">
+                            <span class="link-title">WhatsApp</span>
+                            <span class="link-description">Converse com nossa equipe</span>
+                        </span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                        <path d="M7 17 17 7M8 7h9v9"/>
+                    </svg>
+                        <span class="sr-only">(abre em nova aba)</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-card website"
+                       href="https://misa-solucoes.github.io/misa/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <span class="icon-box">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M3 12h18"/>
+                                <path d="M12 3c-5 5-5 13 0 18"/>
+                                <path d="M12 3c5 5 5 13 0 18"/>
+                            </svg>
+                        </span>
+                        <span class="link-content">
+                            <span class="link-title">Nosso Site</span>
+                            <span class="link-description">Conheça nossas soluções e pacotes</span>
+                        </span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                        <path d="M7 17 17 7M8 7h9v9"/>
+                    </svg>
+                        <span class="sr-only">(abre em nova aba)</span>
+                    </a>
+                </li>
+
+                <li>
+                    <div class="link-card extra is-soon">
+                        <span class="icon-box">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1"/>
+                            </svg>
+                        </span>
+                        <span class="link-content">
+                            <span class="link-title">Em breve</span>
+                            <span class="link-description">Novidades da MISA</span>
+                        </span>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
+        <footer>
+            <div class="footer-line"></div>
+            <p>
+                &copy; 2026 MISA<br>
+                Todos os direitos reservados.
+            </p>
+        </footer>
+
+    </main>
+</body>
+</html>
